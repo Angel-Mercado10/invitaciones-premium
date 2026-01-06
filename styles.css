@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /*Posicionamiento*/
+  display: flex;
+  justify-content: space-between;
+  /*Modelo de caja*/
+  width: 95%;
+  margin-bottom: 1rem;
+}
+
+#principal {
+  /*Modelo de caja*/
+  margin: 1rem 0 0 1rem;
+  /*Tipografia*/
+  text-align: left;
+  /*Visuales*/
+  color: var(--color-claronegro);
+}
+
+#navegacionprincipal {
+  /*Posicionamiento*/
+  display: flex;
+  flex-wrap: nowrap;
+  /*Modelo de caja*/
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+
+.inicio {
+  /*Posicionamiento*/
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  /*Modelo de caja*/
+  height: 30vh;
+  /*Tipografia*/
+  justify-content: center;
+}
+
+.inicio h2,
+.inicio h3,
+.inicio p,
+.inicio footer {
+  /*Modelo de caja*/
+  margin: 1rem 0rem 0rem 1rem;
+  line-height: 1.5;
+}
+
+.inicio footer {
+  /*Posicionamiento*/
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio footer .botones button {
+  /*Visuales*/
+  cursor: pointer;
+}
+
+.beneficios {
+  /*Posicionamiento*/
+  display: flex;
+  flex-direction: column;
+}
+
+.minititulo {
+  /*Modelo de caja*/
+  margin: 3rem 0 0 1rem;
+}
+
+.miniencabezado {
+  /*Modelo de caja*/
+  margin: 0.5rem 0 0 1rem;
+}
+
+.miniparrafo {
+  /*Modelo de caja*/
+  margin: 0.5rem 0 0 1rem;
+}
+
+.listabeneficios {
+  /*Posicionamiento*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /*Modelo de caja*/
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  /*Tipografia*/
+  justify-content: center;
+  text-align: center;
+}
+
+.trabajos {
+  /*Posicionamiento*/
+  display: flex;
+  flex-direction: column;
+}
+
+.ejemplostrabajos {
+  /*Posicionamiento*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40vh;
+  /*Modelo de caja*/
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  /*Tipografia*/
+  text-align: center;
+}
+
+.ejemplostrabajos .Ejemplo1 {
+  /*Posicionamiento*/
+  grid-column: 1/2;
+  /*Visuales*/
+  cursor: pointer;
+}
+
+.ejemplostrabajos .Ejemplo2 {
+  /*Posicionamiento*/
+  grid-column: 2/3;
+  /*Visuales*/
+  cursor: pointer;
+}
+
+.ejemplostrabajos .Ejemplo3 {
+  /*Posicionamiento*/
+  grid-column: 3/4;
+  /*Visuales*/
+  cursor: pointer;
+}
+
+.apartadofilosofia {
+  /*Posicionamiento*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40vh;
+  /*Modelo de caja*/
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  /*Tipografia*/
+  text-align: center;
+}
+
+.apartadofilosofia > * {
+  /*Posicionamiento*/
+  display: flex;
+  flex-direction: column;
+  /*Modelo de caja*/
+  height: 100%;
+  padding: 2rem;
+  /*Tipografia*/
+  justify-content: space-evenly;
+}
+
+.planes {
+  /*Posicionamiento*/
+  display: flex;
+  flex-direction: column;
+}
+
+.paquete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  padding-right: 2rem;
+}
+
+.info-paquete {
+  max-width: 70%;
+}
+
+.paquete button {
+  /*Visuales*/
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #navegacionprincipal {
+    /*Modelo de caja*/
+    gap: 0.5rem;
+  }
+}
